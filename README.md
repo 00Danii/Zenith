@@ -1,44 +1,32 @@
 # Zenith – Aplicación Web de Fondos de Pantalla
 
-**Zenith** es una plataforma web diseñada para explorar y descargar fondos de pantalla de alta calidad. Desarrollada como parte de un proyecto académico para tres materias: _Aplicaciones Web Backend SQL_, _Aplicaciones Web Backend NoSQL_ y _Aplicaciones Web Frontend_.
+**Zenith** es una plataforma web para explorar y descargar fondos de pantalla de alta calidad. Este proyecto fue desarrollado como entrega final para las materias de **Aplicaciones Web Backend SQL**, **Aplicaciones Web Backend NoSQL** y **Aplicaciones Web Frontend**.
 
 <p align="center">
-  <a target="blank"><img src="zenith-backend/Zenith.svg" width="400"  /></a>
+  <img src="zenith-backend/Zenith.svg" width="400" />
 </p>
 
-## Arquitectura del Proyecto
+---
 
-Zenith se compone de tres módulos principales:
+## 🏗 Arquitectura del Proyecto
 
-## 1. Backend SQL
+### 1. Backend SQL
 - **Tecnologías**: [NestJS](https://nestjs.com/), [PostgreSQL](https://www.postgresql.org/)
-- **Propósito**: Gestión de usuarios, autenticación, historial de descargas, y estadísticas.
-- **Base de datos relacional**: PostgreSQL permite mantener relaciones estructuradas entre usuarios y sus acciones.
+- **Funcionalidades**:
+  - Gestión de usuarios
+  - Autenticación
+  - Historial de descargas
+  - Estadísticas
 
-## 2. Backend NoSQL
+### 2. Backend NoSQL
 - **Tecnologías**: [NestJS](https://nestjs.com/), [MongoDB](https://www.mongodb.com/)
-- **Propósito**: Almacenamiento flexible de información sobre fondos de pantalla (tags, resoluciones, metadatos).
-- **Base de datos documental**: MongoDB permite una rápida gestión de recursos multimedia y sus atributos variados.
+- **Funcionalidades**:
+  - Almacenamiento de fondos de pantalla
+  - Tags, resoluciones, metadatos
+  - Organización flexible y escalable
 
-### Docker – Servicios de Base de Datos
-
-Zenith utiliza Docker para levantar PostgreSQL y MongoDB fácilmente.
-
-### Configuración de bases de datos (backend)
-
-El archivo docker-compose.yml de las bases de datos se ubica dentro de la carpeta zenith-backend.
-
-- cd zenith-backend
-- docker-compose up -d
-
-
-Puedes verificar que ambos servicios corran correctamente con docker ps. Si es la primera vez que ejecutas esto, Compose descargará las imágenes y creará volúmenes persistentes según esté definido en docker-compose.yml.
-
-    Asegúrate de tener un archivo .env con las variables DB_PASSWORD, DB_NAME, y MONGO_DB definidas.
-
-## 3. Frontend
+### 3. Frontend
 - **Tecnologías**: [React](https://reactjs.org/), [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/)
-- **Propósito**: Interfaz de usuario para explorar, buscar y descargar fondos de pantalla.
 - **Funcionalidades**:
   - Autenticación de usuarios
   - Galería interactiva
@@ -46,24 +34,32 @@ Puedes verificar que ambos servicios corran correctamente con docker ps. Si es l
   - Descarga directa
   - Vista responsiva
 
+---
 
-<br><br><br><br><br>
+## 🐳 Docker – Servicios de Base de Datos
 
-# Proyecto Académico
+El archivo `docker-compose.yml` se encuentra en la carpeta `zenith-backend`. Para levantar los servicios de base de datos, ejecuta:
 
-Desarrollado como entrega final para:
+```bash
+cd zenith-backend
+docker-compose up -d
+```
 
-- ## Aplicaciones Web Backend SQL
+---
 
-- ## Aplicaciones Web Backend - NoSQL
+## 🎓 Proyecto Académico
 
-- ## Aplicaciones Web Frontend
+Este proyecto fue desarrollado como entrega final para las siguientes materias del curso:
 
-<br><br>
+- **Aplicaciones Web Backend SQL**
+- **Aplicaciones Web Backend NoSQL**
+- **Aplicaciones Web Frontend**
 
-# Autores
+Cada módulo del proyecto cumple con los objetivos específicos de dichas asignaturas, aplicando buenas prácticas de desarrollo moderno, arquitectura modular y separación de responsabilidades.
 
-- ## Orozco Martínez Juan Daniel
-- ## Gonzales Sanchez Ehecatl Quetzalcoatl
+---
 
+## 👥 Autores
 
+- **Juan Daniel Orozco Martínez**
+- **Ehecatl Quetzalcoatl Gonzales Sánchez**
