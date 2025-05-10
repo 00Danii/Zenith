@@ -1,0 +1,105 @@
+# compiled output
+/zenith-backend/dist
+/zenith-backend/node_modules
+/zenith-backend/build
+/zenith-backend/.env
+/zenith-backend/postgres
+/zenith-backend/mongo
+/zenith-backend/uploads
+# Logs
+/zenith-backend/logs
+/zenith-backend/*.log
+/zenith-backend/npm-debug.log*
+/zenith-backend/pnpm-debug.log*
+/zenith-backend/yarn-debug.log*
+/zenith-backend/yarn-error.log*
+/zenith-backend/lerna-debug.log*
+
+# OS
+/zenith-backend/.DS_Store
+
+# Tests
+/zenith-backend/coverage
+/zenith-backend/.nyc_output
+
+# IDEs and editors
+/zenith-backend/.idea
+/zenith-backend/.project
+/zenith-backend/.classpath
+/zenith-backend/.c9/
+/zenith-backend/*.launch
+/zenith-backend/.settings/
+/zenith-backend/*.sublime-workspace
+
+# IDE - VSCode
+/zenith-backend/.vscode/*
+/zenith-backend/!.vscode/settings.json
+/zenith-backend/!.vscode/tasks.json
+/zenith-backend/!.vscode/launch.json
+/zenith-backend/!.vscode/extensions.json
+
+# dotenv environment variable /zenith-backend/files
+/zenith-backend/.env
+/zenith-backend/.env.development.local
+/zenith-backend/.env.test.local
+/zenith-backend/.env.production.local
+/zenith-backend/.env.local
+
+# temp directory
+/zenith-backend/.temp
+/zenith-backend/.tmp
+
+# Runtime data
+/zenith-backend/pids
+/zenith-backend/*.pid
+/zenith-backend/*.seed
+/zenith-backend/*.pid.lock
+
+# Diagnostic reports (https://zenith-backend/nodejs.org/api/report.html)
+/zenith-backend/report.[0-9]*.[0-9]*.[0-9]*.[0-9]/zenith-backend/*.json
+
+
+## FRONTEND
+
+# See https:/help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/zenith-frontend/node_modules
+/zenith-frontend/.pnp
+/zenith-frontend/.pnp.*
+/zenith-frontend/.yarn/*
+/zenith-frontend/!.yarn/patches
+/zenith-frontend/!.yarn/plugins
+/zenith-frontend/!.yarn/releases
+/zenith-frontend/!.yarn/versions
+/
+/zenith-frontend/# testing
+/zenith-frontend/coverage
+/
+/zenith-frontend/# next.js
+/zenith-frontend/.next/
+/zenith-frontend/out/
+/
+/zenith-frontend/# production
+/zenith-frontend/build
+/
+/zenith-frontend/# misc
+/zenith-frontend/.DS_Store
+/zenith-frontend/*.pem
+/
+/zenith-frontend/# debug
+/zenith-frontend/npm-debug.log*
+/zenith-frontend/yarn-debug.log*
+/zenith-frontend/yarn-error.log*
+/zenith-frontend/.pnpm-debug.log*
+/
+/zenith-frontend/# env files (can /opt-in for zenith-frontend//committing if needed)
+/zenith-frontend/.env*
+/
+/zenith-frontend/# vercel
+/zenith-frontend/.vercel
+/
+/zenith-frontend/# typescript
+/zenith-frontend/*.tsbuildinfo
+/zenith-frontend/next-env.d.ts
+
